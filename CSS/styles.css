@@ -1,0 +1,59 @@
+
+/*
+    1AC073 - GREEN
+
+*/
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.navbar{
+    height: 80px;
+    background-color: #1AC073;
+    line-height: 20px;
+    letter-spacing: -1.2%;
+}
+
+.navbar-div{
+    display: flex; align-items: center; justify-content: space-around;
+}
+
+.navbar-logo{
+    font-family: 'Squada One', cursive;
+    color: white;
+    font-size: 32px;
+}
+
+.navbar-options li{
+    font-size: 18px;
+    justify-content: space-evenly;
+    list-style: none;
+    display: inline-block;
+    color: #ffffff;
+    width: 399;
+    margin: 25px;
+}
+
+.navbar-options li a{
+    text-decoration: none;
+    color: white;
+}
+.navbar-icons{
+    display: flex;
+    gap: 15px;
+}
+
+.navbar-icon{
+    height: 22px;
+    width: 22px;
+    cursor: pointer;
+}
+
+
+/* Banner Styling */
+.banner{
+    height: 720px;
+    color: #1AC073;
+}
