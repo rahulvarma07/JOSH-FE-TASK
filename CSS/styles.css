@@ -6,6 +6,7 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
     font-family: 'Open Sans', sans-serif;
 }
 
@@ -17,13 +18,22 @@
 }
 
 .navbar-div{
-    display: flex; align-items: center; justify-content: space-around;
+    margin-left : 7%;
+    margin-right: 7%;
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between;
 }
 
 .navbar-logo{
     font-family: 'Squada One', cursive;
     color: white;
     font-size: 32px;
+}
+
+.navbar-options{
+    display: flex;
+    flex-wrap: nowrap;
 }
 
 .navbar-options li{
@@ -42,7 +52,7 @@
 }
 .navbar-icons{
     display: flex;
-    gap: 15px;
+    gap: 25px;
 }
 
 .navbar-icon{
@@ -53,7 +63,214 @@
 
 
 /* Banner Styling */
-.banner{
-    height: 720px;
-    color: #1AC073;
+
+.home-banner{
+    height: 730px;
+    background-color: #1AC073;
+    justify-content: space-between;
+    padding-top: 100px;
+}
+
+.home-sub-banner{
+    justify-content: space-between;
+    background-color: #1AC073;
+    display: flex;
+    align-items: start;
+    margin-left: 7%;
+    margin-right: 7%;
+
+}
+
+.banner-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.banner-text h1{
+    color: white;
+    width: 534px;
+    height: 147px;
+    font-weight: 400;
+    font-size: 70px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    margin-top: 10px;
+}
+
+.banner-text p{
+    color: white;
+    width: 441px;
+    height: 40px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 20px;
+    letter-spacing: -1.2%;
+    margin-top: 20px;
+}
+
+.banner-cooking-image{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.search-bar{
+    display: flex;
+    margin-top: 20px;
+}
+
+.text-feild{
+    height: 58px;
+    width: 286px;
+    padding: 19px 29px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border: none;
+    
+}
+
+.text-feild-button{
+    height: 58px;
+    background-color: #F3BA00;
+    color: white;
+    width: 112px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border: none
+}
+
+.text-feild ::placeholder{
+    color: #929292;;
+}
+
+/* Styling home products */
+
+.home-kitchen-section{
+    height: 2029px;
+    background-color:  #F7F8FA;
+    display: flex; 
+}
+
+.sub-kitchen-section{
+    align-items: center;
+    background-color:  #F7F8FA;
+    margin-left: 7%;
+    margin-right: 7%;
+    margin-top: 4%;
+    margin-bottom: 4%;
+}
+
+.food-item-display{
+    background-color: white;
+    border-radius: 10px;
+    position: relative;
+    height: 337px;
+    width: 277px;
+    display: flex;
+
+}
+
+.food-item-display img{
+    position: absolute;
+    height: 250px;
+    width: 277px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.food-item-details{
+    padding: 10px 15px;
+    position: absolute;;
+    bottom: 0;
+}
+
+.name-price{
+    padding: 7px 0px;
+    display: flex;
+    justify-content: space-between;
+    width: 250px;
+}
+
+.name-price p{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: -1.2%;
+}
+
+.rating-and-time{
+    display: flex;
+    gap: 15px;
+}
+
+.add-food-item{
+    display: flex;
+    justify-content: space-between;
+    padding: 7px 0px;
+}
+
+.show-time{
+    background-color: #BEBEBE;
+    width: 68px;
+    height: 20px;
+    border-radius: 5px;
+    padding: 0px 3px;
+}
+
+.show-time-button{
+    width: 62px;
+    height: 100%;
+    border-radius: 5px;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.show-time-button p{
+    font-weight: 400;
+    font-size: 12px;
+}
+.rating-button{
+    background-color: #F7F8FA;
+    height: 20px;
+    width: 45px;
+    border-radius: 5px;
+    border: none;
+    font-size: 12px;
+    line-height: 20px;
+    font-weight: 400;
+    letter-spacing: -1.2%;
+}
+
+.add-to-cart-button{
+    margin: 0px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.add-to-cart-button{
+    width: 22px;
+    height: 20px;
+    border-radius: 5px;
+    background-color: #F3BA00;
+    border: none;
+}
+
+.add-to-cart-button img{
+    height: 11.5px;
+    width: 11.5px;
+}
+
+.grid-display{
+   display: grid;
+    grid-template-columns: repeat(4, 2fr);
+    gap: 60px; 
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+    margin-left: 7%;
+    margin-right: 7%;
+    background-color: #F7F8FA;
+    border: none;
 }
