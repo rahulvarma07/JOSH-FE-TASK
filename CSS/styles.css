@@ -4,6 +4,7 @@
 
 */
 *{
+    border: 0;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -15,11 +16,13 @@
     background-color: #1AC073;
     line-height: 20px;
     letter-spacing: -1.2%;
+;
 }
 
 .navbar-div{
-    margin-left : 7%;
-    margin-right: 7%;
+    padding: 2% 0%;
+    padding-left: 9.3%;
+    padding-right: 10.5%;
     display: flex; 
     align-items: center; 
     justify-content: space-between;
@@ -29,10 +32,13 @@
     font-family: 'Squada One', cursive;
     color: white;
     font-size: 32px;
+    margin-right: 1%;
 }
 
 .navbar-options{
+    margin-left: 140px;
     display: flex;
+    width: 500px;
     flex-wrap: nowrap;
 }
 
@@ -42,8 +48,8 @@
     list-style: none;
     display: inline-block;
     color: #ffffff;
-    width: 399;
-    margin: 25px;
+    margin-right: 35px;
+    margin-bottom: 1%;
 }
 
 .navbar-options li a{
@@ -52,7 +58,7 @@
 }
 .navbar-icons{
     display: flex;
-    gap: 25px;
+    gap: 28px;
 }
 
 .navbar-icon{
@@ -65,10 +71,10 @@
 /* Banner Styling */
 
 .home-banner{
-    height: 730px;
+    height: 720px;
     background-color: #1AC073;
     justify-content: space-between;
-    padding-top: 100px;
+    padding-top: 160px;
 }
 
 .home-sub-banner{
@@ -76,15 +82,17 @@
     background-color: #1AC073;
     display: flex;
     align-items: start;
-    margin-left: 7%;
-    margin-right: 7%;
-
+    margin: auto;
+    padding: 0% 7.5%;
 }
 
 .banner-text{
+    height: 326px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
+    padding-top: 1%;
+    padding-left: 2%;
 }
 
 .banner-text h1{
@@ -92,10 +100,8 @@
     width: 534px;
     height: 147px;
     font-weight: 400;
-    font-size: 70px;
-    line-height: 100%;
-    letter-spacing: 0%;
-    margin-top: 10px;
+    font-size: 66px;
+    line-height: 80px;
 }
 
 .banner-text p{
@@ -103,31 +109,29 @@
     width: 441px;
     height: 40px;
     font-weight: 400;
-    font-size: 18px;
+    font-size: 17px;
     line-height: 20px;
     letter-spacing: -1.2%;
-    margin-top: 20px;
 }
 
 .banner-cooking-image{
     display: flex;
-    flex-direction: column;
     justify-content: center;
+    margin : 0% 9%;
 }
+
 
 .search-bar{
     display: flex;
-    margin-top: 20px;
 }
 
 .text-feild{
     height: 58px;
     width: 286px;
-    padding: 19px 29px;
+    padding: 19px 22px;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
     border: none;
-    
 }
 
 .text-feild-button{
@@ -148,52 +152,62 @@
 
 .home-kitchen-section{
     height: 2029px;
-    background-color:  #F7F8FA;
-    display: flex; 
+    width: 100%;
+    background-color: #F7F8FA;
+    display: inline-block; 
+}
+
+.Home-kitchen{
+    margin-top: 6.3%;
+    margin-left: 9%;
+    margin-right: 9%;
+}
+.Home-kitchen h1{
+    font-size: 36px;
 }
 
 .sub-kitchen-section{
+    margin-top: 3.7%;
+    margin-right: 10%;
+    margin-left: 10%;
     align-items: center;
-    background-color:  #F7F8FA;
-    margin-left: 7%;
-    margin-right: 7%;
-    margin-top: 4%;
-    margin-bottom: 4%;
+    background-color: #F7F8FA;
 }
+
 
 .food-item-display{
     background-color: white;
     border-radius: 10px;
     position: relative;
     height: 337px;
-    width: 277px;
+    width: 278.5px;
     display: flex;
-
 }
 
 .food-item-display img{
-    position: absolute;
+    left: 0;
     height: 250px;
-    width: 277px;
+    width: 100%;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
 }
 
 .food-item-details{
-    padding: 10px 15px;
-    position: absolute;;
+    margin: auto;
+    padding: 20px, 10px;
+    position: absolute;
     bottom: 0;
+     padding: 0% 5%;
 }
 
 .name-price{
-    padding: 7px 0px;
     display: flex;
     justify-content: space-between;
     width: 250px;
 }
 
 .name-price p{
-    font-weight: 400;
+    font-weight: 500;
     font-size: 16px;
     line-height: 20px;
     letter-spacing: -1.2%;
@@ -207,7 +221,7 @@
 .add-food-item{
     display: flex;
     justify-content: space-between;
-    padding: 7px 0px;
+    padding: 15px 0px;
 }
 
 .show-time{
@@ -228,7 +242,7 @@
     justify-content: center;
 }
 .show-time-button p{
-    font-weight: 400;
+    font-weight: 500;
     font-size: 12px;
 }
 .rating-button{
@@ -239,11 +253,11 @@
     border: none;
     font-size: 12px;
     line-height: 20px;
-    font-weight: 400;
+    font-weight: 500;
     letter-spacing: -1.2%;
 }
 
-.add-to-cart-button{
+.add-to-cart{
     margin: 0px 10px;
     display: flex;
     justify-content: center;
@@ -263,14 +277,154 @@
 }
 
 .grid-display{
-   display: grid;
+    display: grid;
     grid-template-columns: repeat(4, 2fr);
-    gap: 60px; 
+    column-gap: 22px;  
+    row-gap: 38px;
+    margin: auto;
     justify-content: center;
     align-items: center;
-    padding: 20px 0;
-    margin-left: 7%;
-    margin-right: 7%;
     background-color: #F7F8FA;
     border: none;
 }
+
+.service{
+    position: relative;
+    display: inline-block;
+    height: 855px;
+    width: 100%;
+}
+
+.container-one{
+    position: relative;
+    height: 516px;
+    width: 100%;
+    background-color: white;
+}
+
+.container-two{
+    position: relative;
+    background-color: #C7EACC;
+    width: 100%;
+    height: 346px;
+}
+
+.services-banner{
+    /* background-color: #1AC073; */
+    width: 1050px;
+    top: 0;
+    margin: 5.6% 12.8%;
+    position:absolute;
+    display: inline-block;
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.services-banner h2{
+text-align: center;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 57px;
+    letter-spacing: 0.2px;
+    word-spacing: 3px;
+}
+
+.services-banner p{
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 30px;
+    letter-spacing: 0.2px;
+    text-align: center;
+}
+
+
+.video-wrapper {
+  position: absolute;
+  width: 100%;
+  max-width: 877px;
+  height: 442px;
+  overflow: hidden;
+  top: 0;
+  margin: 20.5% 19.5%;
+}
+
+.video-wrapper video {
+  width: 100%;
+  display: block;
+}
+
+.video-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(26, 192, 115, 0.8); 
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+}
+
+.video-overlay img {
+  width: 24px;
+  height: 24px;
+}
+
+
+
+.contact-service-layout{
+    height: 603px;
+    display: flex;
+    background-color: #F7F8FA;
+}
+
+.contact-service{
+    height: 403px;
+    width: 1181px;
+    margin: auto;
+}
+
+.display-text{
+    width: 317px;
+    height: 73px;
+}
+
+.display-text h3{
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 24px;
+    letter-spacing: -1.2%;
+}
+
+.display-text p{
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 20px;
+    letter-spacing: -1.2%;
+}
+
+.name-email-input{
+    width: 632px;
+    height: 58px;
+}
+
+.email-input,
+.name-input
+{
+    background-color: white;
+    width: 300px;
+    height: 58px;
+    border-radius: 10px;
+    border: none;
+}
+
+.user-message-input{
+    height: 164px;
+    width: 617px;
+}
+
