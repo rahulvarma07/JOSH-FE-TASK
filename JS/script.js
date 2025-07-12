@@ -17,3 +17,5 @@ video.addEventListener("click", () => {
     playButton.style.display = "flex";
   }
 });
+
+
