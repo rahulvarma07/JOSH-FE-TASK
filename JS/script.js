@@ -1,5 +1,4 @@
 // render food items grid
-
 const foodItems = [
   {
     img: "ASSETS/Images/food_item_image_1.jpg",
@@ -215,7 +214,6 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 // add elements inside a slider
-  
 const sliderSpecialItems = [
     {
     img: "ASSETS/Images/food_item_image_1.jpg",
@@ -324,12 +322,12 @@ video.addEventListener("click", () => {
 });
 
 
-// modal settings
-const modalModel = document.querySelector('.modal'); // grab the modal itself
+// modal open
+const modalModel = document.querySelector('.modal');
 
 function dishRequest(){
   modalModel.classList.add('open-model'); 
-  document.body.classList.add('no-scroll');  // no dot, exact name
+  document.body.classList.add('no-scroll');  
 }
 
 function closeRequest(){
