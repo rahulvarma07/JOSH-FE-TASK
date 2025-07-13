@@ -40,19 +40,19 @@ button{
 }
 
 .navbar-options{
-    margin-left: 140px;
+    margin-left: 168px;
     display: flex;
     width: 500px;
     flex-wrap: nowrap;
 }
 
 .navbar-options li{
-    font-size: 18px;
+    font-size: 16px;
     justify-content: space-evenly;
     list-style: none;
     display: inline-block;
     color: #ffffff;
-    margin-right: 35px;
+    margin-right: 38px;
     margin-bottom: 1%;
 }
 
@@ -64,6 +64,25 @@ button{
 .navbar-icons{
     display: flex;
     gap: 28px;
+}
+
+.show-discount{
+    position: absolute;
+    top: 0%;
+    height: 30px;
+    width: 29px;
+    background-color: #F3BA00;
+    border-top-left-radius: 10px;
+    padding-top: 1%;
+    padding-left: 1%;
+}
+
+.show-discount h7{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 20px;
+    letter-spacing: -1.2%;
 }
 
 .navbar-icon{
@@ -167,7 +186,7 @@ button{
 }
 
 .Home-kitchen{
-    margin-top: 6.3%;
+    margin-top: 6.4%;
     margin-left: 9%;
     margin-right: 9%;
 }
@@ -176,7 +195,7 @@ button{
 }
 
 .sub-kitchen-section{
-    margin-top: 3.77%;
+    margin-top: 3.6%;
     margin-right: 9%;
     margin-left: 9%;
     align-items: center;
@@ -231,7 +250,7 @@ button{
 .add-food-item{
     display: flex;
     justify-content: space-between;
-    padding: 15px 0px;
+    padding: 16px 0px;
 }
 
 .show-time{
@@ -259,7 +278,7 @@ button{
 }
 
 .show-popular-items{
-    margin-top: 3.5%;
+    margin-top: 3.4%;
     margin-left: 0%;
     display: flex;
     gap: 50px;
@@ -345,6 +364,7 @@ button{
 }
 
 .scroll-section-layout{
+    position: relative;
     display: inline-block;
     width: 1200px;
     height: 750px;
@@ -353,9 +373,9 @@ button{
 .deliver-items{
     display: flex;
     flex-direction: column;
-    margin-top: 8.8%;
-    margin-left: 38.7%;
-    font-size: 23.6px;
+    margin-top: 9%;
+    margin-left: 38.8%;
+    font-size: 23.5px;
 }
 
 .grid-display{
@@ -370,6 +390,25 @@ button{
     border: none;
 }
 
+
+.slider {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 278.5px;
+  gap: 50px;
+  width: calc(3 * 278.5px + 2 * 50px);
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.slider::-webkit-scrollbar {
+  display: none;
+}
+
+
+
 .request-dish-button{
     height: 48px;
     width: 210px;
@@ -381,6 +420,94 @@ button{
     font-size: 15px;
     margin-top: 7.1%;
     margin-left: 40.4%;
+}
+
+.modal{
+    padding: 2%;
+    position: absolute;
+    top: 0%;
+    left: 28%;
+    height: 520px;
+    width: 500px;
+    background-color: white;
+    visibility: hidden;
+    border-radius: 12px;
+    box-shadow: 4px 5px 30px rgba(0, 0, 0, 0.2);
+    overflow-y: auto;
+}
+
+.request-dish-inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 15px; 
+}
+
+.request-dish-inputs input,
+.request-dish-inputs select {
+  padding: 10px 14px;
+  font-size: 16px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  outline: none;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.request-dish-inputs label {
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+.food-item-display-layout{
+    height: 350px;
+}
+
+/* .food-item-display{
+    border: 10px;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.2);
+} */
+
+.center-shadow {
+  box-shadow: 2px 4px 13px rgba(0, 0, 0, 0.3);
+  border-radius: 12px;
+  height: 337px;
+  width: 278.5px;
+  background-color: #F7F8FA;
+}
+
+.modal button {
+  margin-top: 20px;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  color: white;
+  transition: background-color 0.3s;
+}
+
+.close-modal{
+    background-color: #1AC073;
+}
+
+.close-modal:hover{
+    background-color: #0cc971;
+}
+
+.cancel-request {
+  background-color: #6c757d;
+}
+
+.cancel-request:hover{
+  background-color: #5a6268;
+}
+
+.open-model{
+    top: 16%;
+    visibility: visible;
+}
+.no-scroll {
+  overflow: hidden;
 }
 
 .service{
@@ -407,7 +534,7 @@ button{
 .services-banner{
     width: 1050px;
     top: 0;
-    margin: 5.6% 13.5%;
+    margin: 5.6% 13.3%;
     position:absolute;
     display: inline-block;
     justify-items: center;
@@ -418,7 +545,7 @@ button{
 .services-banner h2{
     font-family: 'Montserrat', sans-serif;
     text-align: center;
-    font-weight: 700;
+    font-weight: 600;
     font-size: 40px;
     line-height: 57px;
     letter-spacing: 0.2px;
@@ -426,12 +553,12 @@ button{
 }
 
 .services-banner p{
-    margin-top: 0.8%;
+    margin-top: 0.9%;
     font-family: 'Montserrat', sans-serif;
-    font-size: 14px;
+    font-size: 14.4px;
     font-weight: 500;
-    line-height: 20px;
-    letter-spacing: 0.2px;
+    line-height: 16px;
+    letter-spacing: 0px;
     text-align: center;
 }
 
@@ -603,9 +730,59 @@ button{
 }
 
 .footer{
-    background-color: grey;
     height: 94px;
     width: 1180.5px;
     margin: auto;
+    display: flex;
+    border: none;
+    border-bottom: 1px solid white;
 }
 
+.bottom-nav-bar-div{
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    height: 100%;
+    width: 100%;
+}
+
+.bottom-nav-bar-options{
+    margin-top: 3.3%;
+    margin-right: 14.1%
+}
+
+.bottom-nav-bar-options ul{
+    display: flex;
+    list-style: none;
+    
+}
+
+.bottom-nav-bar-options li{
+    list-style: none;
+    margin-right: 19.3%;
+}
+
+.bottom-nav-bar-options a{
+    font-family: 'Roboto'  sans-serif;
+    text-decoration: none;
+    color: white;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: -1.2%;
+}
+
+.bottom-nav-bar-logo{
+    font-family: 'Squada One', cursive;
+    color: white;
+    font-size: 32px;
+    margin-top: 2.8%;
+}
+.bottom-nav-bar-icons{
+    margin-top: 3.2%;
+}
+.bottom-nav-bar-icons img{
+    height: 24px;
+    width: 26px;
+    margin-left: 10px;
+}
